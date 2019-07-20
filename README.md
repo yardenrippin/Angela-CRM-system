@@ -1,5 +1,5 @@
 # Angela-CRM-system
-Work management system
+work places management system
 
 technology
 web API with ASP.NET Core
