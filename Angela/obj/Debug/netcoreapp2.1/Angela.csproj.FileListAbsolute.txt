@@ -1,0 +1,14 @@
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\bin\Debug\netcoreapp2.1\Angela.deps.json
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\bin\Debug\netcoreapp2.1\Angela.runtimeconfig.json
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\bin\Debug\netcoreapp2.1\Angela.runtimeconfig.dev.json
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\bin\Debug\netcoreapp2.1\Angela.dll
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.csprojAssemblyReference.cache
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.csproj.CoreCompileInputs.cache
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.RazorAssemblyInfo.cache
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.RazorAssemblyInfo.cs
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.AssemblyInfoInputs.cache
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.AssemblyInfo.cs
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.RazorTargetAssemblyInfo.cache
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\bin\Debug\netcoreapp2.1\Angela.pdb
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.dll
+C:\Users\yarde\Documents\Visual Studio 2017\Projects\Angela\Angela\obj\Debug\netcoreapp2.1\Angela.pdb

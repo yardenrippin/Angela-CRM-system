@@ -1,0 +1,243 @@
+﻿<div id="new_guarantee">
+
+
+    <div class="card">
+        <div id="Eguaraenteeheader" class="card-header  ">
+            <div style="margin-left:2%" class="inline"><h6 class="inline"></h6>בטיפול-<h6 class="inline" id="Euser"></h6></div>
+            <div style="margin-left:2%" class="inline"><h4 id="Eusername"></h4></div>
+            <div style="margin-left:2%" class="inline"><h4 id="EguaranteeNumber" class="inline"></h4>-<h4 id="EcustomerAcount" class="inline"></h4></div>
+            <div style="margin-left:2%" class="inline"><button id="EguaraenteeEdit" class="btn btn-success" data-target="#myModal">עדכן</button></div>
+            <div style="margin-left:2%" class="inline"><h5 class="inline">סטטוס עריכה - </h5><h5 class="inline" id="editstatus"></h5> </div>
+            <div style="margin-left:2%" class="inline">
+                <h5 class="inline"> שינוי ססטוס</h5>
+                <select class="inline" id="Eselect">
+
+                    <option id="csrconfirm" value="אישור מנהל עסקים">אישור מנהל עסקים</option>
+                    <option id="customerconfirm" value="אישור לקוח">אישור לקוח</option>
+                    <option id="mangerconfirm" value="חתימות מנהל">חתימות מנהל</option>
+                    <option id="confirm" value="מאושר">מאושר</option>
+                    <option id="canceled" value="מבוטל">מבוטל</option>
+
+
+
+                </select>
+            </div>
+            <div style="margin-left:2%" class="inline"><h5 id="EguaraenteeMessage"></h5></div>
+        </div>
+
+        <div id="Ecardbody" class="card-body">
+            <div class="row">
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title "> פיננסי <i class="fas fa-coins "></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inlineL">סכום</h6><input type="text" class="inlineH" id="Eamount" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> סכום משוערך</h6><input type="text" class="inlineH" id="EestimatedAmount" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> עמלה</h6><input type="text" class="inlineH" id="Ecommission" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> אחוז</h6><input type="text" id="EcommissiomPercent" class="inlineH" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL">עמלת מסמכים</h6><input type="text" class="inlineH" id="EDocumentsCommission" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> אחוז</h6><input type="text" id="EDocumentsCommissionPercent" class="inlineH" onkeypress="return isNumberKey(event)"></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+
+                                <h5 class="card-title"> תאריכים  <i class="far fa-calendar-alt"></i></h5>
+
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inlineL"> התחלה : </h6><P class="inlineH" id="Estartdate"></P></li>
+                                    <li><h6 class="inlineL"> סיום : </h6><P class="inlineH" id="Eenddate"></P></li>
+                                    <li id="togle"><h6 class="inline"> שנה תאריך סיום : </h6><input type="date" class="inline" id="Enewenddate"></li>
+
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">סוג  <i class="fas fa-briefcase"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <h6 class="inline">   סוג ערבות : </h6><p id="Etype" class="inline"></p>
+                                    </li>
+                                    <li><h6 class="inlineL">  מהות : </h6><input type="text" id="Eessence" class="inlineH" style=" box-sizing: border-box"></li>
+                                    <li><h6 class="inlineL">  בנוגע ל : </h6><input type="text" id="Eabout" class="inlineH" style=" box-sizing: border-box"></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מדד  <i class="far fa-chart-bar"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inlineL">צמוד : </h6><input type="text" class="inlineH" id="Eindex"></li>
+                                    <li><h6 class="inlineL"> תאריך : </h6><input type="date" class="inlineH" id="Eindexdate"></li>
+                                    <li><h6 class="inlineL"> מטבע : </h6><input type="text" class="inlineH" id="Ecurency"></li>
+                                    <li><h6 class="inlineL">ערך : </h6><input type="text" class="inlineH" id="Ecurencyvalue"></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">לקוח  <i class="fas fa-user"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 id="Ecustomername" class="inline"> </h6>
+                                    <li><h6 class="inline">איש קשר : </h6><p class="inline" id="Ecustomercontacte"></p></li>
+                                    <li><h6 class="inline">מייל : </h6><a href="#" title="לשליחת מייל לחץ על הקישור" class="inline" id="ECompanyMail"></a> </li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="ECompanyPhone"></p> </li>
+                                    <li><h6 class="inline">פקס : </h6><P class="inline" id="ECompanyFax"></P> </li>
+                                    <li><h6 class="inline">כתובת : </h6><P id="ECompanyAddress"></P></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מוטב  <i class="fas fa-user"></i></h5>
+                                <ul class="list-unstyled">
+
+                                    <li><h6 class="inline">שם המוטב :  </h6><P class="inline" id="EbeneficiaryName"></P></li>
+                                    <li><h6 class="inline">מייל : </h6><a href="#" title="לשליחת מייל לחץ על הקישור" class="inline" id="EbeneficiaryMail"></a></li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="EbeneficiaryPhone"></p></li>
+                                    <li><h6 class="inline">פקס : </h6><p class="inline" id="EbeneficiaryFax"></p></li>
+                                    <li><h6 class="inline">כתובת : </h6><p class="inline" id="EbeneficiaryAddress"></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מנהל עסקים  <i class="fas fa-users"></i></h5>
+
+                                <ul class="list-unstyled">
+
+                                    <li><h6 class="inline">CSR : </h6><p class="inline" id="GroupName"></p></li>
+                                    <li><h6 class="inline">מייל : </h6><a href="#" title="לשליחת מייל לחץ על הקישור" class="inline" id="GroupMail"> </a></li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="GroupPhone"> </p></li>
+                                    <li><h6 class="inline">פקס : </h6><p class="inline" id="GroupFax"> </p></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">קבצים <i class="far fa-file-alt"></i></h5>
+                                <ul>
+                                    <li style="margin-top:5px;">
+
+                                        <i id="GuaranteeLetter" class="far fa-file-pdf fa-2x"></i>
+
+                                        כתב ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="Guaranteeconfirm" class="far fa-file-pdf fa-2x"></i>
+
+                                        עמלות+כתב ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="extensionLetter" class="far fa-file-pdf fa-2x"></i>
+
+                                        הארכת ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="extensionconfirm" class="far fa-file-pdf fa-2x"></i>
+
+                                        עמלות+הארכת ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="Newprotocol" class="far fa-file-pdf fa-2x"></i>
+
+
+                                        פרוטוקול הקמה
+
+                                    </li>
+                                    <li style="margin-top:5px;">
+                                        <i id="ExtensionProtocol" class="far fa-file-pdf fa-2x"></i>
+
+                                        פרוטוקול הארכה
+
+
+                                    </li>
+
+
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h5 id="Dtitel" class="modal-title"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="Dmessagebody"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">ביטול</button>
+                                <button id="Dsave" type="button" class="btn btn-primary">אישור</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

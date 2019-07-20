@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <!--link to fontawsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--link to css-->
+    <link href="Main/main.css" rel="stylesheet" />
+    <link href="Table/table.css" rel="stylesheet"/>
+    <link href="GuaranteDiteals/garanteediteals.css" rel="stylesheet" />
+    <link href="Guaranteeedit/Guaranteeeditcss.css" rel="stylesheet"/>
+    <link href="Newguarantee/newguarantee.css" rel="stylesheet" />
+    <link href="Extension/Extension.css" rel="stylesheet" />
+    <link href="Users/loginOrSignup.css" rel="stylesheet" />
+    <link href="Options/options.css" rel="stylesheet" />
+    <!--link to js-->
+    <script src="Options/options.js"></script>
+    <script src="Users/loginOrSignup.js"></script>
+    <script  src="Extension/Extension.js"></script>
+    <script src="Guaranteeedit/Guaranteeedit.js"></script>
+    <script src="GuaranteDiteals/guaranteediteals.js"></script>
+    <script src="utilities/jquery.js"></script>
+    <script src="utilities/utilites.js"></script>
+    <script src="Main/mian.js"></script>
+    <script src="Table/table.js"></script>
+    <script src="Newguarantee/newguarantee.js"></script>
+    <script src="Files/files.js"></script>
+    <title>Angela</title>
+
+
+    <script>    
+        var main;
+      
+        function init() {
+            
+            main = new start("page");
+            main.login();
+        }
+
+    </script>
+</head>
+<body dir="rtl" onload="init();">
+    <div id="page">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+            <a class="navbar-brand" href="#"><img src="discount.jpg" alt="Alternate Text" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <P id="usernume" class="nav-link">משתמש</P>
+                    </li>
+                    <li class="nav-item">
+                        <button id="myTasks" class="btn btn-outline-success my-2 my-sm-0 nav-item " style="margin:2px;">המשימות שלי</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="createguarantee" class="btn btn-outline-success my-2 my-sm-0 nav-item " style="margin:2px;">ערבות חדשה</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="extension" class="btn btn-outline-success my-2 my-sm-0 nav-item " style="margin:2px;">הארכת ערבות</button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button id="options" class="btn btn-outline-success my-2 my-sm-0 nav-item" style="margin:2px;">אפשרויות</button>
+                    </li>
+                    <li class="nav-item">
+
+
+                        <button id="advancedSearch" type="button" class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            חיפוש מתקדם
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+
+                        <div class="dropdown-menu ">
+
+                            <button id="tasks" class="btn btn-info my-2 my-sm-0  " style="width:100%; ">משימות לפי עובד</button>
+                            <a id="guaranteeCategoris" class="dropdown-item" style="background-color:rgba(255, 123, 123, 0.75)">ערבויות לפי נושאים </a>
+                           
+                            <button id="searchcustomers" class="dropdown-item" style="background-color:rgba(255, 123, 123, 0.75)">חיפוש לקוחות</button>
+                            <button id="searchemployees" class="dropdown-item " style="background-color:rgba(255, 123, 123, 0.75)">חיפוש עובדים</button>
+                            <button id="searchcsr" class="dropdown-item " style="background-color:rgba(255, 123, 123, 0.75)"> חיפוש מחלקות</button>
+                            <button id="statistics" class="dropdown-item " style="background-color:rgba(255, 123, 123, 0.75)">סטטיסטיקה ויעדים</button>
+
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <button id="disconect" class="btn btn-outline-success my-2 my-sm-0 nav-item">התחבר</button>
+                    </li>
+
+
+                </ul>
+                <div id="serchgroup" class="form-inline my-2 my-lg-0">
+                    <input onkeypress="return isNumberKey(event)" id="customerNumber" class="form-control mr-sm-2" type="search" placeholder="מספר חשבון" aria-label="Search">
+                    <input onkeypress="return isNumberKey(event)" id="guaranteeNumber" class="form-control mr-sm-2" type="search" placeholder="מספר ערבות" aria-label="Search">
+                    <button id="search" class="btn btn-outline-success my-2 my-sm-0">חיפוש מהיר</button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="main_container">
+
+        </div>
+        <div id="myfiles" style="display:none;"></div>
+        <div id="taskmodal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 id="Dtitel" class="modal-title">משימות לפי עובד</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       <h3 id="modalmessage"></h3>
+                        <h6 class="inlineL">בחר עובד</h6><select class="inlineH" id="selectEmployees"></select>
+                       
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">ביטול</button>
+                        <button id="save" type="button" class="btn btn-primary">אישור</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

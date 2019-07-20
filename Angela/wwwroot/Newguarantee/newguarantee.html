@@ -1,0 +1,194 @@
+﻿
+
+
+<div id="newguarantee">
+
+
+    <div class="card">
+        <div id="Nguaraenteeheader" class="card-header  ">
+            <div style="margin-left:2%" class="inline"><h5 id="Ncustomernumber">בחר מספר חשבון</h5></div>
+            <div style="margin-left:2%" class="inline"> <input type="text" id="NInput" class="inline" onkeypress="return isNumberKey(event)" placeholder="הקלד מספר לקוח"></div>
+            <div style="margin-left:2%" class="inline">
+                <h4 class="inline"> סוג ערבות</h4>
+                <select class="inline" id="Nselect">
+
+                    <option id="Noperation" value="ביצוע">ביצוע</option>
+                    <option id="Ncradit" value="אבטחת אשראי">אבטחת אשראי</option>
+                    <option id="Nfourmel" value="פורמלית">פורמלית</option>
+
+
+
+
+                </select>
+            </div>
+            <div style="margin-left:2%" class="inline"><button id="NguaraenteeEdit" class="btn btn-primary">בחר</button></div>
+            <div style="margin-left:2%" class="inline"><button id="Nupdateguarantee" class="btn btn-secondary">עדכן</button></div>
+            <div style="margin-left:2%" class="inline"><h5 id="NguaraenteeMessage"></h5></div>
+        </div>
+        
+            <div><p style="margin-left:2%" class="inline">שם הנערב</p><input type="text" class="inline" id="Ninvolved"></div>
+        
+        <div id="Ncardbody" class="card-body">
+            <div class="row">
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title "> פיננסי <i class="fas fa-coins "></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inlineL">סכום</h6><input type="text" class="inlineH" id="Namount" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> סכום משוערך</h6><input type="text" class="inlineH" id="NestimatedAmount" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> עמלה</h6><input type="text" class="inlineH" id="Ncommission" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> אחוז</h6><input type="text" id="NcommissiomPercent" class="inlineH" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL">עמלת מסמכים</h6><input type="text" class="inlineH" id="NDocumentsCommission" onkeypress="return isNumberKey(event)"></li>
+                                    <li><h6 class="inlineL"> אחוז</h6><input type="text" id="NDocumentsCommissionPercent" class="inlineH"  onkeypress="return isNumberKey(event)"></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+
+                                <h5 class="card-title"> תאריכים  <i class="far fa-calendar-alt"></i></h5>
+
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inlineL"> התחלה : </h6><input type="date" class="inlineH" id="Nstartdate"></li>
+
+                                    <li><h6 class="inlineL"> סיום : </h6><input type="date" class="inlineH" id="Nenddate"></li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">סוג  <i class="fas fa-briefcase"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <h6 class="inline">   סוג ערבות : </h6><p id="Ntype" class="inline"></p>
+                                    </li>
+                                    <li><h6 class="inlineL">  מהות : </h6><input type="text" id="Nessence" class="inlineH" style="white-space: initial;"></li>
+                                    <li><h6 class="inlineL">  בנוגע ל : </h6><input type="text" id="Nabout" class="inlineH" style="white-space: initial;"></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מדד  <i class="far fa-chart-bar"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inlineL">צמוד : </h6><input type="text" class="inlineH" id="Nindex"></li>
+                                    <li><h6 class="inlineL"> תאריך : </h6><input type="date" class="inlineH" id="Nindexdate"></li>
+                                    <li><h6 class="inlineL"> מטבע : </h6><input type="text" class="inlineH" id="Ncurency"></li>
+                                    <li><h6 class="inlineL">ערך : </h6><input type="number" class="inlineH" id="Ncurencyvalue" onkeypress="return isNumberKey(event)"></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">לקוח  <i class="fas fa-user"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 id="Ncustomername" class="inline"> </h6>
+                                    <li><h6 class="inline">איש קשר : </h6><p class="inline" id="Ncustomercontacte"></p></li>
+                                    <li><h6 class="inline">מייל : </h6><a class="inline" id="NCompanyMail"></a> </li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="NCompanyPhone"></p> </li>
+                                    <li><h6 class="inline">פקס : </h6><P class="inline" id="NCompanyFax"></P> </li>
+                                    <li><h6 class="inline">כתובת : </h6><P id="NCompanyAddress" style="white-space: initial;"></P></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מוטב  <i class="fas fa-user"></i></h5>
+
+
+                                <ul class="list-unstyled">
+
+                                    <li><h6 class="inlineL">שם המוטב :  </h6><input type="text" class="inlineH" id="NbeneficiaryName"></li>
+                                    <li><h6 class="inlineL">מייל : </h6><input type="email" class="inlineH" id="NbeneficiaryMail"></li>
+                                    <li><h6 class="inlineL">טלפון : </h6><input type="text" class="inlineH" id="NbeneficiaryPhone"></li>
+                                    <li><h6 class="inlineL">פקס : </h6><input type="text" class="inlineH" id="NbeneficiaryFax"></li>
+                                    <li><h6 class="inlineL">כתובת : </h6><input type="text" class="inlineH" id="NbeneficiaryAddress"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מנהל עסקים  <i class="fas fa-users"></i></h5>
+
+                                <ul class="list-unstyled">
+
+                                    <li><h6 class="inline">CSR : </h6><p class="inline" id="GroupName"></p></li>
+                                    <li><h6 class="inline">מייל : </h6><a class="inline" id="GroupMail"> </a></li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="GroupPhone"> </p></li>
+                                    <li><h6 class="inline">פקס : </h6><p class="inline" id="GroupFax"> </p></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">קבצים <i class="far fa-file-alt"></i></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="NmyModal" class="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 id="Dtitel" class="modal-title"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="Nmessagebody"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="Ncancel" type="button" class="btn btn-secondary">ביטול</button>
+                                <button id="Nsave" type="button" class="btn btn-primary">אישור</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,353 @@
+﻿
+<div id="divoptions">
+    <div style="width:100%;height:25px;"><h2 id="divoptionsmessage"></h2> </div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <!--employee-->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <i class="more-less fas fa-plus"></i>
+                        <strong id="inner">עובדים</strong>
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+
+                    <div id="Ecardbody" class="card-body">
+                        <div class="row">
+                            <div style="margin-bottom:0.5%;" class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+                                            <h5 class="card-title "> הוספה <i class="fas fa-user-plus"></i></h5>
+                                            <ul id="ul1" class="list-unstyled">
+                                                <li><h6 class="inlineL">מספר העובד</h6><input type="text" class="inlineH" id="employeNumber"></li>
+                                                <li><h6 class="inlineL"> שם</h6><input type="text" class="inlineH" id="Username"></li>
+                                                <li><h6 class="inlineL"> סיסמה</h6><input type="password" class="inlineH" id="password"></li>
+                                                <li><h6 class="inlineL"> אישור סיסמה</h6><input type="password" class="inlineH" id="Password2"></li>
+                                                <li><h6 class="inlineL"> מייל</h6><input type="text" id="employeMail" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> טלפון</h6><input type="text" id="employePhone" class="inlineH"></li>
+                                                <li>
+                                                    <h6 class="inlineL">הרשאות</h6><select class="inlineH" id="permission">
+                                                        <option id="manager" value="מנהל">מנהל</option>
+                                                        <option id="csr" value="מנהל עסקים"> מנהל עסקים</option>
+                                                        <option id="ragular" value="עובד">עובד</option>
+                                                    </select>
+                                                </li>
+                                                <li><h6 class="inlineL"> קבוצה</h6><select class="inlineH" id="selectGroup"></select></li>
+
+
+                                                <li><button id="addem" class="btn btn-success">הוסף</button></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom:0.5%;" class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+                                            <h5 class="card-title "> עדכון <i class="fas fa-user-edit"></i></h5>
+
+                                            <ul id="getupemploye" class="list-unstyled">
+                                                <li>
+                                                    <div class="inlineL"><button id="selectem" class="btn btn-success">בחר</button></div><select class="inlineH" id="selectEmployee"></select>
+                                                </li>
+
+
+                                            </ul>
+                                            <ul id="settupemploye" class="list-unstyled" style="display:none;">
+
+
+
+                                                <li><h6 class="inlineL"> שם</h6><input type="text" class="inlineH" id="upUsername"></li>
+                                                <li><h6 class="inlineL"> סיסמה</h6><input type="password" class="inlineH" id="uppassword"></li>
+
+                                                <li><h6 class="inlineL"> מייל</h6><input type="text" id="upemployeMail" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> טלפון</h6><input type="text" id="upemployePhone" class="inlineH"></li>
+                                                <li>
+                                                    <h6 class="inlineL">הרשאות</h6><select class="inlineH" id="uppermission">
+                                                        <option id="upmanager" value="מנהל">מנהל</option>
+                                                        <option id="upcsr" value="מנהל עסקים"> מנהל עסקים</option>
+                                                        <option id="upragular" value="עובד">עובד</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <h6 class="inlineL"> קבוצה</h6><select class="inlineH" id="selectGroup2"></select>
+                                                </li>
+                                                <li><button id="updateem" class="btn btn-success">עדכן</button></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom:0.5%;" class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+
+                                            <h5 class="card-title"> הסרה  <i class="fas fa-user-times"></i></h5>
+
+                                            <ul class="list-unstyled">
+
+                                                <li>
+                                                    <h6 class="inlineL">בחר עובד</h6><select class="inlineH" id="selectEmployee2"></select>
+                                                </li>
+                                                <li><button id="removeem" class="btn btn-success">הסר</button>
+
+
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom:0.5%;" class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+
+                                            <h5 class="card-title"> הודעות  <i class="far fa-comment-dots"></i></h5>
+
+                                            <h6 id="emmessage"></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end employee-->
+    <!--customers-->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading2">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <i class="more-less fas fa-plus"></i>
+                        <strong id="inner">לקוחות</strong>
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                <div class="panel-body">
+
+                    <div id="Ccardbody" class="card-body">
+                        <div class="row">
+                            <div style="margin-bottom:0.5%; height:320px" class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+                                            <h5 class="card-title "> הוספה <i class="fas fa-user-tie"></i></h5>
+                                            <ul id="ul1" class="list-unstyled">
+                                                <li><h6 class="inlineL">מספר חשבון</h6><input type="text" class="inlineH" id="AcountNumber"></li>
+                                                <li><h6 class="inlineL"> שם החברה</h6><input type="text" class="inlineH" id="CompantName"></li>
+                                                <li><h6 class="inlineL">איש קשר</h6><input type="text" class="inlineH" id="Contactman"></li>
+                                                <li><h6 class="inlineL"> מייל</h6><input type="email" class="inlineH" id="CompanyMail"></li>
+                                                <li><h6 class="inlineL"> טלפון</h6><input type="text" id="CompanyPhone" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> פקס</h6><input type="text" id="Companyfax" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> כתובת</h6><input type="text" id="CompanyAddress" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> עמלת ביצוע</h6><input type="text" onkeypress="return isNumberKey(event)" id="ExecutionCommission" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> עמלה פורמלית</h6><input type="text" onkeypress="return isNumberKey(event)" id="FormalCommission" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> אבטחת אשראי</h6><input type="text" onkeypress="return isNumberKey(event)" id="CreditsecurityCommission" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> עמלת מסמכים</h6><input type="text" onkeypress="return isNumberKey(event)" id="DocumentsCommission" class="inlineH"></li>
+
+
+                                                <li><h6 class="inlineL"> קבוצה</h6><select class="inlineH" id="selectGroup3"></select></li>
+
+
+                                                <li><button id="addcu" class="btn btn-success">הוסף</button></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom:0.5%;" class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+                                            <h5 class="card-title "> עדכון <i class="fas fa-user-edit"></i></h5>
+
+                                            <ul id="getupcustomers" class="list-unstyled">
+                                                <li>
+                                                    <div class="inlineL"><button id="selectcu" class="btn btn-success">בחר</button></div><input type="text" id="Selectcustomer" placeholder="הקלד מספר חשבון" class="inlineH">
+                                                </li>
+
+
+                                            </ul>
+                                            <ul id="settupcustomers" class="list-unstyled" style="display:none;">
+
+
+
+                                                <li><h6 class="inlineL"> שם החברה</h6><input type="text" class="inlineH" id="upCompantName"></li>
+                                                <li><h6 class="inlineL">איש קשר</h6><input type="text" class="inlineH" id="upContactman"></li>
+                                                <li><h6 class="inlineL"> מייל</h6><input type="text" class="inlineH" id="upCompanyMail"></li>
+                                                <li><h6 class="inlineL"> טלפון</h6><input type="text" id="upCompanyPhone" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> פקס</h6><input type="text" id="upCompanyfax" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> כתובת</h6><input type="text" id="upCompanyAddress" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> עמלת ביצוע</h6><input type="text" onkeypress="return isNumberKey(event)" id="upExecutionCommission" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> עמלה פורמלית</h6><input type="text" onkeypress="return isNumberKey(event)" id="upFormalCommission" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> אבטחת אשראי</h6><input type="text" onkeypress="return isNumberKey(event)" id="upCreditsecurityCommission" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> עמלת מסמכים</h6><input type="text" onkeypress="return isNumberKey(event)" id="upDocumentsCommission" class="inlineH"></li>
+
+
+                                                <li><h6 class="inlineL"> קבוצה</h6><select class="inlineH" id="selectGroup4"></select></li>
+
+
+                                                <li><button id="updatecu" class="btn btn-success">עדכן</button></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom:0.5%;" class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+
+                                            <h5 class="card-title"> הודעות  <i class="far fa-comment-dots"></i></h5>
+
+                                            <h6 id="Cmmessage"></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end customer-->
+    <!--group-->
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="heading3">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <i class="more-less fas fa-plus"></i>
+                        <strong id="inner">מחלקות</strong>
+                    </a>
+                </h4>
+            </div>
+
+            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                <div class="panel-body">
+
+                    <div id="Ccardbody" class="card-body">
+                        <div class="row">
+                            <div style="margin-bottom:0.5%; height:320px" class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+                                            <h5 class="card-title "> הוספה <i class="fas fa-users"></i></h5>
+                                            <ul id="ul1" class="list-unstyled">
+                                                <li><h6 class="inlineL">מספר מחלקה</h6><input type="text" class="inlineH" id="GroupName"></li>
+                             
+                                                <li><h6 class="inlineL"> מייל</h6><input type="email" class="inlineH" id="GroupMail"></li>
+                                                <li><h6 class="inlineL"> טלפון</h6><input type="text" id="GroupPhone" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> פקס</h6><input type="text" id="GroupFax" class="inlineH"></li>
+                                                
+
+
+                                             
+
+
+                                                <li><button id="addgroup" class="btn btn-success">הוסף</button></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-bottom:0.5%;" class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+                                            <h5 class="card-title "> עדכון <i class="fas fa-users-cog"></i></h5>
+
+                                            <ul id="getupgroup" class="list-unstyled">
+
+                                                <li><h6 class="inlineL"> קבוצה</h6><select class="inlineH" id="selectGroup5"></select></li>
+
+                                                <li><button id="selectgroup" class="btn btn-success">בחר</button></li>
+
+                                            </ul>
+                                            <ul id="settupgroup" class="list-unstyled" style="display:none;">
+
+                                                <li><h6 class="inlineL">מספר מחלקה</h6><input type="text" class="inlineH" id="upGroupName"></li>
+                                                <li><h6 class="inlineL"> מייל</h6><input type="email" class="inlineH" id="upGroupMail"></li>
+                                                <li><h6 class="inlineL"> טלפון</h6><input type="text" id="upGroupPhone" class="inlineH"></li>
+                                                <li><h6 class="inlineL"> פקס</h6><input type="text" id="upGroupFax" class="inlineH"></li>
+
+
+
+
+
+                                                <li><button id="updategroup" class="btn btn-success">עדכן</button></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom:0.5%;" class="col-sm-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="height">
+
+                                            <h5 class="card-title"> הודעות  <i class="far fa-comment-dots"></i></h5>
+
+                                            <h6 id="groupmmessage"></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end group-->
+
+
+    <div id="Modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 id="Dtitel" class="modal-title">הודעת מערכת</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <H6 id="Dmessagebody"></H6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ביטול</button>
+                    <button id="Dsave" type="button" class="btn btn-primary">אישור</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

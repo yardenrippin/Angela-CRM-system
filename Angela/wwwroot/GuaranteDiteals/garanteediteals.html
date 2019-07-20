@@ -1,0 +1,205 @@
+﻿<div id="garanteediteals">
+
+    
+    <div class="card">
+        <div id="guaraenteeheader" class="card-header  ">
+            <div style="margin-left:2%" class="inline"><h5 id="guaranteeowner"></h5></div>
+            <div style="margin-left:2%" class="inline"><h4 id="guaranteeNumber" class="inline"></h4>-<h4 id="customerAcount" class="inline"></h4></div>
+            <div style="margin-left:2%" class="inline"><button id="guaraenteeEdit" class="btn btn-success ">עריכה</button></div>
+            <div style="margin-left:2%" class="inline"><h5 id="status"></h5></div>
+            <div style="margin-left:2%" class="inline"><h5 id="guaraenteeMessage"></h5> </div>
+        </div>
+
+        <div id="gcardbody" class="card-body">
+            <div class="row">
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title "> פיננסי   <i class="fas fa-coins "></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inline">סכום : </h6><p class="inline" id="amountx"></p></li>
+                                    <li><h6 class="inline"> סכום משוערך : </h6><p class="inline" id="estimatedAmount"></p></li>
+                                    <li><h6 class="inline"> עמלה : </h6><p class="inline" id="commission"></p><p id="commissiomPercent" class="inline"></p></li>
+                                    <li><h6 class="inline">עמלת מסמכים : </h6><p class="inline" id="DocumentsCommission"></p><p id="DocumentsCommissionPercent" class="inline"></p></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+
+                                <h5 class="card-title"> תאריכים  <i class="far fa-calendar-alt"></i></h5>
+
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inline"> התחלה : </h6><p class="inline" id="startdate"></p></li>
+                                    <li><h6 class="inline"> סיום : </h6><p class="inline" id="enddate"></p></li>
+                                    <li><h6 class="inline"> זמן שנותר : </h6><p class="inline" id="timer"></p></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">סוג  <i class="fas fa-briefcase"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inline">   סוג ערבות : </h6><p id="type" class="inline"></p></li>
+                                    <li><h6 class="inline">  מהות : </h6><p id="essence" class="inline"></p></li>
+                                    <li><h6 class="inline">  בנוגע ל : </h6><p id="about" class="inline"></p></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מדד  <i class="far fa-chart-bar"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 class="inline">צמוד : </h6><p class="inline" id="index"></p></li>
+                                    <li><h6 class="inline"> תאריך : </h6><p class="inline" id="indexdate"></p></li>
+                                    <li><h6 class="inline"> מטבע : </h6><p class="inline" id="curency"></p></li>
+                                    <li><h6 class="inline">ערך : </h6><p class="inline" id="curencyvalue"></p></li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">לקוח  <i class="fas fa-user"></i></h5>
+                                <ul class="list-unstyled">
+                                    <li><h6 id="customername" class="inline"> </h6>
+                                    <li><h6 class="inline">איש קשר : </h6><p class="inline" id="customercontacte">  </p></li>
+                                    <li><h6 class="inline">מייל : </h6><a href="#" title="לשליחת מייל לחץ על הקישור" class="inline" id="CompanyMail"> </a></li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="CompanyPhone"> </p></li>
+                                    <li><h6 class="inline">פקס : </h6><p class="inline" id="CompanyFax"> </p></li>
+                                    <li><h6 class="inline">כתובת : </h6><p class="inline" id="CompanyAddress">  </p></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מוטב  <i class="fas fa-user"></i></h5>
+                                <ul class="list-unstyled">
+
+                                    <li><h6 class="inline"> שם המוטב :</h6><p class="inline" id="beneficiaryName"></p></li>
+                                    <li><h6 class="inline">מייל : </h6><a href="#" title="לשליחת מייל לחץ על הקישור" class="inline" id="beneficiaryMail"> </a></li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="beneficiaryPhone"></p></li>
+                                    <li><h6 class="inline">פקס : </h6><p class="inline" id="beneficiaryFax"></p></li>
+                                    <li><h6 class="inline">כתובת : </h6><p class="inline" id="beneficiaryAddress"> </p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">מנהל עסקים  <i class="fas fa-users"></i></h5>
+
+                                <ul class="list-unstyled">
+
+                                    <li><h6 class="inline">CSR : </h6><p class="inline" id="GroupName"></p></li>
+                                    <li><h6 class="inline">מייל : </h6><a href="#" title="לשליחת מייל לחץ על הקישור" class="inline" id="GroupMail"> </a></li>
+                                    <li><h6 class="inline">טלפון : </h6><p class="inline" id="GroupPhone"> </p></li>
+                                    <li><h6 class="inline">פקס : </h6><p class="inline" id="GroupFax"> </p></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-bottom:0.5%;" class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="height">
+                                <h5 class="card-title">קבצים <i class="far fa-file-alt"></i></h5>
+                                <ul>
+                                    <li style="margin-top:5px;">
+
+                                        <i id="GuaranteeLetter" class="far fa-file-pdf fa-2x"></i>
+
+                                        כתב ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="Guaranteeconfirm" class="far fa-file-pdf fa-2x"></i>
+
+                                        עמלות+כתב ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="extensionLetter" class="far fa-file-pdf fa-2x"></i>
+
+                                        הארכת ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="extensionconfirm" class="far fa-file-pdf fa-2x"></i>
+
+                                        עמלות+הארכת ערבות
+
+                                    </li>
+
+                                    <li style="margin-top:5px;">
+
+                                        <i id="Newprotocol" class="far fa-file-pdf fa-2x"></i>
+
+
+                                        פרוטוקול הקמה
+
+                                    </li>
+                                    <li style="margin-top:5px;">
+                                        <i id="ExtensionProtocol" class="far fa-file-pdf fa-2x"></i>
+
+                                        פרוטוקול הארכה
+
+
+                                    </li>
+
+
+
+
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
+</div>

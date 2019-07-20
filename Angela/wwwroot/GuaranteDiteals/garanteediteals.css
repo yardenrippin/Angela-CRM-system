@@ -1,0 +1,44 @@
+﻿.inline {
+    display: inline-block;
+    
+}
+.height {
+    height: 212px;
+   
+    overflow: auto;
+
+}
+#cardbody {
+    background-color:#dddddd;
+}
+.fa-coins {
+    color: #f0ff3d;
+}
+.fa-calendar-alt {
+    color:#5abcfe;
+}
+.fa-briefcase {
+    color: #c38f34;
+}
+.fa-chart-bar{
+    color:#83f755;
+}
+.fa-user {
+color:#475ac7;
+}
+.fa-file-alt{
+    color:#cc6f6f;
+}
+#commissiomPercent {
+    margin-right :25px;
+}
+#DocumentsCommissionPercent {
+    margin-right: 25px;
+}
+.fa-users{
+    color:#e3803a;
+}
+.fa-file-pdf {
+    cursor: pointer;
+        color:#ff0000;
+}
