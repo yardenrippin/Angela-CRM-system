@@ -9,9 +9,10 @@ Client side: Javascript, Jquery, Bootstrap,Font Awesome, CSS, HTML
 Server Side: API with ASP.NET Coree, c #
 dll plugins: ironPDF,Microsoft.Office.Interop.Outlook;
 
-
+----------------------------------------------------------------------------------------------------------------------------------------
 
 System description
+
 The system was created in order to provide an efficient response .
 When an employee has access to manage his tasks from one complete system
 
@@ -35,6 +36,8 @@ Created on the server and not on the database
 When the guarantee is in edit mode. The guarantee data is added to the edit list which is displayed as Tasks for Employees
 Also. only when the edit status is confirmed or disabled are the data copied to a corresponding database guarantee and the job deleted
 The original guarantee in the database does not change until the guarantee in the corresponding class tempdata is confirmed or canceled
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 תיאור המערכת
 
