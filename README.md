@@ -9,35 +9,7 @@ Client side: Javascript, Jquery, Bootstrap,Font Awesome, CSS, HTML
 Server Side: API with ASP.NET Coree, c #
 dll plugins: ironPDF,Microsoft.Office.Interop.Outlook;
 
-תיאור המערכת
 
-המערכת נוצרה על מנת לתת מענה יעיל לניהול מחלקת ערבויות בבנק
-כאשר יש נגישות לעובד לנהל את משימותיו ממערכת שלמה אחת 
-
-גישה למערכת
-
-על מנת לתת גישה לבסיס הנתונים מצורף קובץ 
-  angale.sql 
-
-גישה וסיסמאות
-
-עובדים 
-שם משתמש D345491 ,     סיסמה 1234
-שם משתמש D12342 ,      סיסמה 1234
-שם משתמש D123456  ,   סיסמה 1234
-
-לקוחות
-
-מספר חשבון 1234  מספר ערבות 1-40 לסרוגין
-מספר חשבון 5555  מספר ערבות 1-30 לסרוגין
-מספר חשבון 1111  מספר ערבות 1-15 לסרוגין
-
- שים לב 
-class Tempdata
-נוצר בשרת ולא בבסיס הנתונים
-  כאשר ערבות נכנסת למצב של עריכה  נתוני הערבות מתווספים לרשימת עריכה זמנית אשר  המוצגת בתור משימות לעובדים 
-כמו כן רק כאשר סטטוס העריכה מאושר או מבוטל  הנתנוים מועתקים לערבות המקבילה בבסיס הנתונים והמשימה נמחקת
-* במזן העריכה הערבות המקורית בבסיס הנתונים לא משתנה עד למתן אישור או ביטול של הערבות במחלקה המקבילה  class Tempdata
 
 System description
 The system was created in order to provide an efficient response .
@@ -63,6 +35,39 @@ Created on the server and not on the database
 When the guarantee is in edit mode. The guarantee data is added to the edit list which is displayed as Tasks for Employees
 Also. only when the edit status is confirmed or disabled are the data copied to a corresponding database guarantee and the job deleted
 The original guarantee in the database does not change until the guarantee in the corresponding class tempdata is confirmed or canceled
+
+תיאור המערכת
+
+המערכת נוצרה על מנת לתת מענה יעיל לניהול מחלקת ערבויות בבנק
+כאשר יש נגישות לעובד לנהל את משימותיו ממערכת שלמה אחת 
+
+גישה למערכת
+
+על מנת לתת גישה לבסיס הנתונים מצורף קובץ 
+  angale.sql 
+
+גישה וסיסמאות
+
+עובדים
+
+שם משתמשD345491 ,     סיסמה 1234
+שם משתמש D12342 ,      סיסמה 1234
+שם משתמש D123456  ,   סיסמה 1234
+
+לקוחות
+
+מספר חשבון 1234  מספר ערבות 1-40 לסרוגין
+מספר חשבון 5555  מספר ערבות 1-30 לסרוגין
+מספר חשבון 1111  מספר ערבות 1-15 לסרוגין
+
+ שים לב 
+class Tempdata
+נוצר בשרת ולא בבסיס הנתונים
+  כאשר ערבות נכנסת למצב של עריכה  נתוני הערבות מתווספים לרשימת עריכה זמנית אשר  המוצגת בתור משימות לעובדים 
+כמו כן רק כאשר סטטוס העריכה מאושר או מבוטל  הנתנוים מועתקים לערבות המקבילה בבסיס הנתונים והמשימה נמחקת
+* במזן העריכה הערבות המקורית בבסיס הנתונים לא משתנה עד למתן אישור או ביטול של הערבות במחלקה המקבילה  class Tempdata
+
+
 
 
 
