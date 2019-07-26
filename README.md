@@ -23,6 +23,7 @@ Attached - sql file named angale.sql to give access to the database.
 Update the path to your database 
 
 appsetting.json => "conn1": (Your database path )
+--------------------------------------------------
 
 Access and passwords
 
@@ -59,6 +60,8 @@ The original guarantee in the database does not change until the guarantee in th
 
  עדכן את הנתיב לבסיס נתונים של 
  appsetting.json => "conn1": (Your database path )
+ --------------------------------------------------
+ 
 גישה וסיסמאות
 
 עובדים
