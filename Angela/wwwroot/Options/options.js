@@ -1,4 +1,4 @@
-﻿function runoptions(id) {
+function runoptions(id) {
    
     populateFields(this, document.getElementById(id));
     this.employeeobj = {};
@@ -32,16 +32,19 @@
                 break;
             case "הוסף לקוח":
                 this.actionupdate("api/Customers/Add", this.Cmmessage, this.customerobj);
+                break;
             case "עדכן לקוח":
                 this.actionupdate("api/Customers/update", this.Cmmessage, this.customerobj);
                 this.updatcustomertmp();
                 break;
             case "הוסף מחלקה":
                 this.actionupdate("api/Groups/add", this.groupmmessage, this.groupobj);
+                break;
             case "עדכן מחלקה":
 
                 this.actionupdate("api/Groups/update", this.groupmmessage, this.groupobj);
                 this.updatgruoptemp();
+                break;
         } 
     }.bind(this);
    
@@ -50,9 +53,13 @@
         this.actionupdate = function (url,messages,obj) {
             sendHttprquest(url, function (success, response) {
                 let res = Number(response);
-                if (success && res > 0) {
+                if (main.disconect.disabled == true) {
                     lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search)
                     lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
+                }
+                if (success && res > 0) {
+                
+                   
                     this.isedit = true;
                     this.renderoptions ();
                     message("עודכן בהצלחה", messages, "blue");
@@ -74,8 +81,10 @@
     this.actiondelete = function (url) {
         sendHttprquest(url, function (success, response) {
             let res = JSON.parse(response);
-            lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search);
-            lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
+            if (main.disconect.disabled == true) {
+                lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search)
+                lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
+            }
             if (success) {
 
                 if (res==true) {
@@ -333,7 +342,8 @@
     }.bind(this);
     //renove employee
     this.removeem.onclick = function () {
-
+        lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search)
+        lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
         message("", this.emmessage);
         this.remove_employee = this.selectEmployee2.value;
         this.Dsave.innerHTML = "הסר עובד"
@@ -385,7 +395,8 @@
 
         sendHttprquest("api/Customers/firstordefualt?AcountNumber=" + num, function (success, response) {
             let myresponse = JSON.parse(response);
-            if (success && myresponse==true) {
+            if (success && myresponse == true) {
+                
                 this.Dsave.innerHTML = "הוסף לקוח"
                 this.Dmessagebody.innerHTML = "האם להוסיף לקוח ?"
                 $('#Modal').modal('show');
@@ -394,7 +405,7 @@
                 lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
                 message("לקוח זה קיים במערכת", this.Cmmessage, "red");
             }
-        }).bind(this);
+        }.bind(this));
 
     } else {
             message("אחד או יותר מהפרטים שהוזנו אינם חוקיים", this.Cmmessage, "red");
@@ -512,12 +523,13 @@
         lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
      
         for (var i = 0; i < this.groupList.length; i++) {
-            if (this.groupList[i].groupName==this.GroupName.value ) {
+            if (this.groupList[i].groupName == this.GroupName.value) {
                 lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search);
                 lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
                 message("קבוצה זו קיימת במערכת", this.groupmmessage, "red");
                 return;
             }
+        }
             let isvalid = true;
             for (var i = 0; i < this.addgroupArr.length; i++) {
 
@@ -548,7 +560,7 @@
                 lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
             }
 
-        }
+        
       
 
     }.bind(this);
@@ -665,5 +677,14 @@
 
         }.bind(this), this.groupobj);
     }.bind(this);
+
+    this.dontsave.onclick = function () {
+        if (main.disconect.disabled == true) {
+            lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search)
+            lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
+        }
+    }.bind(this);
+
+  
 
 }
