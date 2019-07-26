@@ -18,7 +18,9 @@ The system was created in order to provide an efficient response .
 When an employee has access to manage his tasks from one complete system
 
 Access to the system
-Attached - sql file named angale.sql to give access to the database.
+
+Attached - sql file named angale.sql to give access to the database.( Run the script)
+                           ----------
 
 Update the path to your database 
 
@@ -55,10 +57,16 @@ The original guarantee in the database does not change until the guarantee in th
 
 גישה למערכת
 
-על מנת לתת גישה לבסיס הנתונים מצורף קובץ 
-  angale.sql 
 
- עדכן את הנתיב לבסיס נתונים של 
+על מנת לתת גישה לבסיס הנתונים מצורף קובץ 
+ 
+ angale.sql
+ -----------
+  
+
+ 
+ עדכן את הנתיב לבסיס הנתונים שלך
+ 
  appsetting.json => "conn1": (Your database path )
  --------------------------------------------------
  
