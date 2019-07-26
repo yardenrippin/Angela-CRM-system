@@ -25,12 +25,15 @@ Update the path to your database
 appsetting.json => "conn1": (Your database path )
 
 Access and passwords
+
 Employees
+
 username D345491 password 1234  
 username D1234 password 1234
 username D123456 password 1234
 
 Customers
+
 Account number 1234  guarantee number 1-40
 Account number 5555  guarantee number 1-30
 Account number 1111  guarantee number 1-15
