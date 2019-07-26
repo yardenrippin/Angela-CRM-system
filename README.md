@@ -1,7 +1,8 @@
 # Angela-CRM-system
 work places management system
 
-technology
+technology:
+
 web API with ASP.NET Core
 Workspace: Visual Studio
 Database: MSSQL
@@ -18,6 +19,10 @@ When an employee has access to manage his tasks from one complete system
 
 Access to the system
 Attached - sql file named angale.sql to give access to the database.
+
+Update the path to your database 
+
+appsetting.json => "conn1": (Your database path )
 
 Access and passwords
 Employees
@@ -49,6 +54,8 @@ The original guarantee in the database does not change until the guarantee in th
 על מנת לתת גישה לבסיס הנתונים מצורף קובץ 
   angale.sql 
 
+ עדכן את הנתיב לבסיס נתונים של 
+ appsetting.json => "conn1": (Your database path )
 גישה וסיסמאות
 
 עובדים
