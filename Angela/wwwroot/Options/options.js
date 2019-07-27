@@ -50,7 +50,7 @@ function runoptions(id) {
    
 
         //action add/update
-        this.actionupdate = function (url,messages,obj) {
+       this.actionupdate = function (url,messages,obj) {
             sendHttprquest(url, function (success, response) {
                 let res = Number(response);
                 if (main.disconect.disabled == true) {
@@ -69,8 +69,7 @@ function runoptions(id) {
 
                     message("עדכון נכשל", messages, "red");
                     $('#Modal').modal('hide');
-                    lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search);
-                    lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
+                  
                 }
 
 
@@ -97,8 +96,7 @@ function runoptions(id) {
                     $('#Modal').modal('hide');
                 } else {
                     message("לא ניתן להסיר עובד שיש לו ערביות משוכיות", this.emmessage, "blue");
-                    lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search);
-                    lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
+                   
                     $('#Modal').modal('hide');
                     this.isedit = true;
                 }
@@ -106,13 +104,13 @@ function runoptions(id) {
                 message("עדכון נכשל", this.emmessage, "red");
                 $('#Modal').modal('hide');
                 this.isedit = true;
-                lockUI(main.disconect, main.myTasks, main.createguarantee, main.extension, main.advancedSearch, main.statistics, main.options, main.search)
-                lockUI(this.addem, this.updateem, this.selectem, this.removeem, this.updatecu, this.addcu, this.selectcu, this.addgroup, this.selectgroup, this.updatgroup);
+           
             }
 
 
         }.bind(this));
     }.bind(this);
+
 
     this.renderoptions = function () {
        
